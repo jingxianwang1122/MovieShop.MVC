@@ -1,0 +1,49 @@
+﻿@model List<MovieShop.Entities.Movie>
+
+    @{
+        ViewBag.Title = "MovieByGenre";
+    }
+
+    <table class="table">
+        @*<thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Revenue</th>
+                <th scope="col">Date Released</th>
+            </tr>
+        </thead>*@
+        <tbody>
+
+            @*@foreach (var movie in Model)
+            {*@
+                @*<tr>
+                    <td>@movie.Id</td>
+                    <td>@movie.Title</td>
+                    <td>@movie.Revenue</td>
+                    <td>
+                        @if (movie.ReleaseDate != null)
+                        {
+                            @movie.ReleaseDate.Value.ToShortDateString()
+                        }
+                    </td>
+                </tr>
+            }*@
+
+                <div class="rounded">
+                    <div class="container-fluid bg-light">
+                        <div class="row">
+                            @foreach (var movie in Model)
+                            {
+                                <div class="col-6 col-lg-3 col-sm-4 col-xl-2">
+                                    @Html.Partial("_MovieCard", movie)
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+            </tbody>
+    </table>
+ 
+

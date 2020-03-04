@@ -1,0 +1,13 @@
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\bin\Debug\MovieShop.Services.dll
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\bin\Debug\MovieShop.Services.pdb
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\obj\Debug\MovieShop.Services.dll
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\obj\Debug\MovieShop.Services.pdb
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\bin\Debug\MovieShop.Data.dll
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\bin\Debug\MovieShop.Entities.dll
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\bin\Debug\EntityFramework.dll
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\bin\Debug\MovieShop.Data.pdb
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\bin\Debug\MovieShop.Data.dll.config
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\bin\Debug\MovieShop.Entities.pdb
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\bin\Debug\EntityFramework.xml
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\obj\Debug\MovieShop.Services.csprojAssemblyReference.cache
+C:\Antra.Training\MovieShop.MVC\MovieShop.Services\obj\Debug\MovieShop.Services.csproj.CopyComplete

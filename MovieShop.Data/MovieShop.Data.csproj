@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3147E21F-05A5-4E13-939B-CC5488E2B4E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MovieShop.Data</RootNamespace>
+    <AssemblyName>MovieShop.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\202002191713395_initialmigration.cs" />
+    <Compile Include="Migrations\202002191713395_initialmigration.designer.cs">
+      <DependentUpon>202002191713395_initialmigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002191720254_updateGenre.cs" />
+    <Compile Include="Migrations\202002191720254_updateGenre.designer.cs">
+      <DependentUpon>202002191720254_updateGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002191909063_addmovieclass.cs" />
+    <Compile Include="Migrations\202002191909063_addmovieclass.designer.cs">
+      <DependentUpon>202002191909063_addmovieclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002201814173_movieGenreJunctionTable.cs" />
+    <Compile Include="Migrations\202002201814173_movieGenreJunctionTable.designer.cs">
+      <DependentUpon>202002201814173_movieGenreJunctionTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002201833588_updateTrailer.cs" />
+    <Compile Include="Migrations\202002201833588_updateTrailer.designer.cs">
+      <DependentUpon>202002201833588_updateTrailer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002202017233_addUserandRole.cs" />
+    <Compile Include="Migrations\202002202017233_addUserandRole.designer.cs">
+      <DependentUpon>202002202017233_addUserandRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002202028232_updateUserRole.cs" />
+    <Compile Include="Migrations\202002202028232_updateUserRole.designer.cs">
+      <DependentUpon>202002202028232_updateUserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002202154308_updateDatabase.cs" />
+    <Compile Include="Migrations\202002202154308_updateDatabase.designer.cs">
+      <DependentUpon>202002202154308_updateDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002202158490_updateUser.cs" />
+    <Compile Include="Migrations\202002202158490_updateUser.designer.cs">
+      <DependentUpon>202002202158490_updateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002211355472_updateNameofCrewCast.cs" />
+    <Compile Include="Migrations\202002211355472_updateNameofCrewCast.designer.cs">
+      <DependentUpon>202002211355472_updateNameofCrewCast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002211438218_updateurlname.cs" />
+    <Compile Include="Migrations\202002211438218_updateurlname.designer.cs">
+      <DependentUpon>202002211438218_updateurlname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002261714146_updateCast.cs" />
+    <Compile Include="Migrations\202002261714146_updateCast.designer.cs">
+      <DependentUpon>202002261714146_updateCast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003021516313_updateunknown.cs" />
+    <Compile Include="Migrations\202003021516313_updateunknown.designer.cs">
+      <DependentUpon>202003021516313_updateunknown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MovieShopDbContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\GenreRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\MovieRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Repositories\json1.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MovieShop.Entities\MovieShop.Entities.csproj">
+      <Project>{991457ea-ca29-4903-835c-40e6f758642f}</Project>
+      <Name>MovieShop.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202002191713395_initialmigration.resx">
+      <DependentUpon>202002191713395_initialmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002191720254_updateGenre.resx">
+      <DependentUpon>202002191720254_updateGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002191909063_addmovieclass.resx">
+      <DependentUpon>202002191909063_addmovieclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002201814173_movieGenreJunctionTable.resx">
+      <DependentUpon>202002201814173_movieGenreJunctionTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002201833588_updateTrailer.resx">
+      <DependentUpon>202002201833588_updateTrailer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002202017233_addUserandRole.resx">
+      <DependentUpon>202002202017233_addUserandRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002202028232_updateUserRole.resx">
+      <DependentUpon>202002202028232_updateUserRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002202154308_updateDatabase.resx">
+      <DependentUpon>202002202154308_updateDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002202158490_updateUser.resx">
+      <DependentUpon>202002202158490_updateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002211355472_updateNameofCrewCast.resx">
+      <DependentUpon>202002211355472_updateNameofCrewCast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002211438218_updateurlname.resx">
+      <DependentUpon>202002211438218_updateurlname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002261714146_updateCast.resx">
+      <DependentUpon>202002261714146_updateCast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003021516313_updateunknown.resx">
+      <DependentUpon>202003021516313_updateunknown.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>

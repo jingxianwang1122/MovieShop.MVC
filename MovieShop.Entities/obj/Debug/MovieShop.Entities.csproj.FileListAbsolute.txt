@@ -1,0 +1,4 @@
+C:\Antra.Training\MovieShop.MVC\MovieShop.Entities\bin\Debug\MovieShop.Entities.dll
+C:\Antra.Training\MovieShop.MVC\MovieShop.Entities\bin\Debug\MovieShop.Entities.pdb
+C:\Antra.Training\MovieShop.MVC\MovieShop.Entities\obj\Debug\MovieShop.Entities.dll
+C:\Antra.Training\MovieShop.MVC\MovieShop.Entities\obj\Debug\MovieShop.Entities.pdb
